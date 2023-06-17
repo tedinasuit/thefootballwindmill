@@ -21,32 +21,7 @@ export default {
   data() {
 
     return {
-      buttons: [
-        {
-          id: 1,
-          image: require('@/assets/button1.png')
-        },
-        {
-          id: 2,
-          image: require('@/assets/button2.png')
-        },
-        {
-          id: 3,
-          image: require('@/assets/button3.png')
-        },
-        {
-          id: 4,
-          image: require('@/assets/button4.png')
-        },
-        {
-          id: 5,
-          image: require('@/assets/button5.png')
-        },
-        {
-          id: 6,
-          image: require('@/assets/button6.png')
-        }
-      ]
+      
     };
   }
 };

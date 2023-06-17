@@ -1,8 +1,8 @@
 <template>
   <div>
     <div class="button-grid">
-      <div v-for="button in buttons" :key="button.id" class="button">
-        <img :src="button.image" alt="Button Image" class="button-image" />
+      <div v-for="button in buttons" :key="button.id" class="button" @click="handleButtonClick(button)">
+        <img :src="button.image" :style="`width: ${button.imageWidth}`" alt="Button Image" class="button-image" />
       </div>
     </div>
   </div>
@@ -42,7 +42,9 @@ export default {
       buttons: [
         {
           id: 1,
-          image: require('@/assets/button1.png')
+          image: require('@/assets/Eredivisie.png'),
+          route: 'EredivisieView',
+          imageWidth: '9vh',
         },
         {
           id: 2,
@@ -66,6 +68,16 @@ export default {
         }
       ]
     };
+  },
+
+  methods: {
+    handleButtonClick(button) {
+      if (button.route === '#') {
+        // Do nothing or handle a different action for buttons with '#'
+      } else {
+        this.$router.push({ name: button.route });
+      }
+    }
   }
 };
 </script>
