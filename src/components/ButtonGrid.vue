@@ -1,25 +1,43 @@
 <template>
   <div>
-    <ButtonGrid />
+    <div class="button-grid">
+      <div v-for="button in buttons" :key="button.id" class="button">
+        <img :src="button.image" alt="Button Image" class="button-image" />
+      </div>
+    </div>
   </div>
 </template>
 
 <style scoped>
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  justify-items: center;
+  align-content: flex-start;
+  margin-top: 2vh;
+}
 
+.button {
+  background-color: #f3f3f3;
+  height: 12vh;
+  width: 12vh;
+  display: flex;
+  border-radius: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-image {
+  max-width: 100%;
+  max-height: 100%;
+}
 </style>
 
 <script>
-import ButtonGrid from '@/components/ButtonGrid.vue';
-
 export default {
-
-  components: {
-    ButtonGrid
-  },
-
-  
   data() {
-
     return {
       buttons: [
         {
