@@ -1,11 +1,12 @@
 <template>
-  <div>
-    <h2>{{ title }}</h2>
-    <ul>
-      <li v-for="item in items" :key="item.guid">
-        <a :href="item.link" target="_blank">{{ item.title }}</a>
-      </li>
-    </ul>
+  <div class="rss-feed">
+    <div>
+      <ul>
+        <li v-for="item in items" :key="item.guid">
+          <a :href="item.link" target="_blank">{{ item.title }}</a>
+        </li>
+      </ul>
+    </div>
   </div>
 </template>
 
@@ -39,3 +40,21 @@ export default {
   }
 };
 </script>
+
+<style>
+.rss-feed {
+  max-height: 50vh;
+  max-width: 40vh;
+  overflow-y: scroll;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+  font-size: 1.5vh;
+}
+
+li {
+  margin-top: 4vh;
+}
+</style>
