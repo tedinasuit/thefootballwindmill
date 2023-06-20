@@ -1,7 +1,7 @@
 <template>
   <div>
     <p>
-      Stats
+      Fixtures
     </p>
   </div>
 </template>

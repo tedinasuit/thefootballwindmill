@@ -2,7 +2,7 @@
 <div class="three-buttons-container">
   <div class="component-container">
       <EredivisieTable v-if="activeComponent === 1" />
-      <EredivisieStats v-if="activeComponent === 2" />
+      <EredivisieFixtures v-if="activeComponent === 2" />
       <EredivisieNews v-if="activeComponent === 3" />
     </div>
 
@@ -49,7 +49,7 @@
 
 <script>
 import EredivisieTable from '@/components/EredivisieTable.vue';
-import EredivisieStats from '@/components/EredivisieStats.vue';
+import EredivisieFixtures from '@/components/EredivisieFixtures.vue';
 import EredivisieNews from '@/components/EredivisieNews.vue';
 
 
@@ -63,7 +63,7 @@ export default {
                 },
                 {
                     id: 2,
-                    label: "Stats"
+                    label: "Fixtures"
                 },
                 {
                     id: 3,
@@ -80,7 +80,7 @@ export default {
     },
     components: { 
       EredivisieTable, 
-      EredivisieStats,
+      EredivisieFixtures,
       EredivisieNews
     }
 };
