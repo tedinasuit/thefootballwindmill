@@ -3,7 +3,7 @@
   <div class="component-container">
       <EredivisieTable v-if="activeComponent === 1" />
       <EredivisieStats v-if="activeComponent === 2" />
-      <EredivisieLineup v-if="activeComponent === 3" />
+      <EredivisieNews v-if="activeComponent === 3" />
     </div>
 
     <div class="button-grid">
@@ -50,7 +50,7 @@
 <script>
 import EredivisieTable from '@/components/EredivisieTable.vue';
 import EredivisieStats from '@/components/EredivisieStats.vue';
-import EredivisieLineup from '@/components/EredivisieLineup.vue';
+import EredivisieNews from '@/components/EredivisieNews.vue';
 
 
 export default {
@@ -67,7 +67,7 @@ export default {
                 },
                 {
                     id: 3,
-                    label: "Lineup"
+                    label: "News"
                 },
             ],
             activeComponent: 1 // Initially the Table component is active
@@ -81,7 +81,7 @@ export default {
     components: { 
       EredivisieTable, 
       EredivisieStats,
-      EredivisieLineup
+      EredivisieNews
     }
 };
 </script>
