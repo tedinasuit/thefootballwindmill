@@ -16,7 +16,7 @@
   gap: 20px;
   justify-items: center;
   align-content: flex-start;
-  margin-top: 2vh;
+  width: 100%;
 }
 
 .button {
@@ -64,7 +64,8 @@ export default {
         },
         {
           id: 6,
-          image: require('@/assets/button6.png')
+          image: require('@/assets/button6.png'),
+          route: 'LiveScoresView',
         }
       ]
     };

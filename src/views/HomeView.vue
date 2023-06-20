@@ -1,11 +1,16 @@
 <template>
+    <div class="gap">
+
+    </div>
   <div>
     <ButtonGrid />
   </div>
 </template>
 
 <style scoped>
-
+.gap{
+  height: 30px;
+}
 </style>
 
 <script>
