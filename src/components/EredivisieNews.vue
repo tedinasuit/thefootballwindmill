@@ -61,14 +61,15 @@ export default {
   max-height: 50vh;
   max-width: 40vh;
   overflow-y: scroll;
+  margin-right: clamp(10%, 10%, 20%);;
 }
 
 a {
   color: black;
   text-decoration: none;
   font-size: 1.5vh;
-  display: flex; /* Added */
-  align-items: center; /* Added */
+  display: flex; 
+  align-items: center; 
 }
 
 li {
@@ -78,13 +79,13 @@ li {
 }
 
 li:not(:last-child) {
-  border-bottom: 1px solid #ccc; /* Added */
-  padding-bottom: 2vh; /* Added */
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2vh; 
 }
 
 img {
-  max-width: 15vh; /* Added */
-  height: auto; /* Added */
+  max-width: 15vh;
+  height: auto; 
   margin-right: 2vh;
 }
 </style>

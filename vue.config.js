@@ -3,6 +3,10 @@ const path = require('path');
 module.exports = {
   transpileDependencies: true,
   lintOnSave: false,
+  devServer: {
+    host: 'thefootballwindmill.com'
+  },
+
   configureWebpack: {
     resolve: {
       fallback: {
@@ -13,8 +17,13 @@ module.exports = {
       }
     }
   },
+
   chainWebpack: (config) => {
     // Resolve 'xml2js' module to fix another potential error
     config.resolve.alias.set('xml2js', path.resolve(__dirname, 'node_modules/xml2js'));
+  },
+
+  pwa: {
+    name: 'TheFootballWindmill'
   }
 };

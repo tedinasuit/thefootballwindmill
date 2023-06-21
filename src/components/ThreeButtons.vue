@@ -1,13 +1,13 @@
 <template>
-<div class="three-buttons-container">
-  <div class="component-container">
+  <div class="three-buttons-container">
+    <div class="component-container">
       <EredivisieTable v-if="activeComponent === 1" />
       <EredivisieFixtures v-if="activeComponent === 2" />
       <EredivisieNews v-if="activeComponent === 3" />
     </div>
 
     <div class="button-grid">
-      <div v-for="button in buttons" :key="button.id" class="button" @click="handleButtonClick(button)">
+      <div v-for="button in buttons" :key="button.id" :class="['button', { 'active-button': isActiveButton(button.id) }]" @click="handleButtonClick(button)">
         {{ button.label }}
       </div>
     </div>
@@ -16,6 +16,9 @@
 
 <style scoped>
 
+.active-button {
+  color: yellow;
+}
 
 .button-grid {
   position: absolute;
@@ -32,9 +35,9 @@
 }
 
 .button {
-  background-color: #000000;
+  background-color: rgb(56, 55, 55);
   height: 5vh;
-  width: 12vh;
+  width: 10vh;
   display: flex;
   border-radius: 20px;
   align-items: center;
@@ -59,7 +62,7 @@ export default {
             buttons: [
                 {
                     id: 1,
-                    label: "Table"
+                    label: "Table",
                 },
                 {
                     id: 2,
@@ -76,6 +79,9 @@ export default {
     methods: {
       handleButtonClick(button) {
       this.activeComponent = button.id; // Set the active component based on the clicked button
+    },
+    isActiveButton(buttonId) {
+      return this.activeComponent === buttonId;
     }
     },
     components: { 

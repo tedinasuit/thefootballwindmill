@@ -1,18 +1,15 @@
 <template>
   <LogoButton />
   <router-view/>
-  <HomeButton />
 </template>
 
 <script>
 import LogoButton from '@/components/LogoButton.vue';
-import HomeButton from '@/components/HomeButton.vue';
 
 export default {
 
   components: {
     LogoButton,
-    HomeButton
   },
 
 };

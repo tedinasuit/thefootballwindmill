@@ -16,6 +16,7 @@
   bottom: 20px;
   display: flex;
   justify-content: center;
+  min-height: 8vh;
 }
 
 .back-link {

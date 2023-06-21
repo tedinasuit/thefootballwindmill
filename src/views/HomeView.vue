@@ -5,6 +5,8 @@
   <div>
     <ButtonGrid />
   </div>
+
+  <HomeButton />
 </template>
 
 <style scoped>

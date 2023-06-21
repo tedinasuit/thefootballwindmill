@@ -43,28 +43,38 @@ export default {
         {
           id: 1,
           image: require('@/assets/Eredivisie.png'),
-          route: 'EredivisieView',
           imageWidth: '9vh',
+          route: 'EredivisieView',
         },
         {
           id: 2,
-          image: require('@/assets/button2.png')
+          image: require('@/assets/button2.png'),
+          image: require('@/assets/PremierLeague.png'),
+          imageWidth: '10vh',
         },
         {
           id: 3,
-          image: require('@/assets/button3.png')
+          image: require('@/assets/button3.png'),
+          image: require('@/assets/Bundesliga.png'),
+          imageWidth: '7vh',
         },
         {
           id: 4,
-          image: require('@/assets/button4.png')
+          image: require('@/assets/button4.png'),
+          image: require('@/assets/La Liga.png'),
+          imageWidth: '8vh',
         },
         {
           id: 5,
-          image: require('@/assets/button5.png')
+          image: require('@/assets/button5.png'),
+          image: require('@/assets/SerieA.png'),
+          imageWidth: '9vh',
         },
         {
           id: 6,
           image: require('@/assets/button6.png'),
+          image: require('@/assets/Ligue1.png'),
+          imageWidth: '6vh',
           route: 'LiveScoresView',
         }
       ]
