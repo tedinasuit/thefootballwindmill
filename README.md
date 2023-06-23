@@ -12,9 +12,9 @@ The Football Windmill is a Vue.js application that provides information about va
 
 ## Features
 
-- Display of live scores
-- Information about Eredivisie league (fixtures, lineup, news, table)
-
+- Display of live scores (status: not working due to API CORS issues)
+- Information about the top 6 leagues (fixtures, news, table)
+- Being able to view goal clips, almost immediately after it happened. (WiP)
 
 ## Getting Started
 
