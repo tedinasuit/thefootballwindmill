@@ -26,6 +26,8 @@ The application is composed of several Vue.js components:
 
 - **ThreeButtons.vue**: This component displays three buttons labeled "Table", "Fixtures", and "News". Clicking on these buttons will change the active component to EredivisieTable, EredivisieFixtures, and EredivisieNews respectively.
 
+- **LiveScores.vue**: This component extracts match data from an API (football-data.org). Cuurently not working due to a CORS error.
+
 ## Installation
 
 To install and run this project, you will need Node.js and npm installed on your machine. After cloning the repository, navigate to the project directory and run the following commands:
