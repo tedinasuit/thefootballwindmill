@@ -2,6 +2,14 @@
 
 The Football Windmill is a Vue.js application that provides information about various football leagues. It uses Vue Router for routing and Axios for making HTTP requests.
 
+## Table of contents
+
+[Features]()
+[Getting Started]()
+[Components]()
+[Dependencies]()
+[Development Dependencies]()
+
 ## Features
 
 - Display of live scores
@@ -67,10 +75,4 @@ The application is composed of several Vue.js components:
 - `@vue/cli-service`: Local service for Vue CLI projects
 - `eslint`: Tool for identifying and reporting on patterns in JavaScript
 - `eslint-plugin-vue`: ESLint plugin for Vue.js applications
-
-## Scripts
-
-- `serve`: Starts the development server
-- `build`: Builds the application for production
-- `lint`: Lints and fixes files
 
