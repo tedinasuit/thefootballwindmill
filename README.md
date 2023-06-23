@@ -4,11 +4,11 @@ The Football Windmill is a Vue.js application that provides information about va
 
 ## Table of contents
 
-[Features](https://github.com/tedinasuit/thefootballwindmill/blob/main/README.md#features)
-[Getting Started](https://github.com/tedinasuit/thefootballwindmill/blob/main/README.md#getting-started)
-[Components](https://github.com/tedinasuit/thefootballwindmill/blob/main/README.md#components)
-[Dependencies](https://github.com/tedinasuit/thefootballwindmill/blob/main/README.md#dependencies)
-[Development Dependencies](https://github.com/tedinasuit/thefootballwindmill/blob/main/README.md#development-dependencies)
+- [Features](https://github.com/tedinasuit/thefootballwindmill/blob/main/README.md#features)
+- [Getting Started](https://github.com/tedinasuit/thefootballwindmill/blob/main/README.md#getting-started)
+- [Components](https://github.com/tedinasuit/thefootballwindmill/blob/main/README.md#components)
+- [Dependencies](https://github.com/tedinasuit/thefootballwindmill/blob/main/README.md#dependencies)
+- [Development Dependencies](https://github.com/tedinasuit/thefootballwindmill/blob/main/README.md#development-dependencies)
 
 ## Features
 
