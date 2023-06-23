@@ -17,16 +17,6 @@ To get a local copy up and running, follow these steps:
 2. Install the dependencies with `npm install`
 3. Start the development server with `npm run serve`
 
-## Project Structure
-
-- `public`: Contains the static files like favicon and index.html.
-- `src`: Contains the main source code for the application.
-  - `assets`: Contains the image assets used in the application.
-  - `components`: Contains the Vue.js components used in the application.
-  - `router`: Contains the Vue Router configuration.
-  - `views`: Contains the different views of the application.
-- `vue.config.js`: Contains the configuration for Vue CLI.
-
 ## Components
 
 The application is composed of several Vue.js components:
