@@ -26,6 +26,7 @@ To get a local copy up and running, follow these steps:
 
 ## Components
 
+All relevant components are in the `src` directory.
 The application is composed of several Vue.js components:
 
 - **App.vue**: This is the main component that serves as the root of the application.
