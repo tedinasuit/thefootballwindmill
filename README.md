@@ -30,9 +30,9 @@ The application is composed of several Vue.js components:
 
 - **App.vue**: This is the main component that serves as the root of the application.
 
-- **ButtonGrid.vue**: This component is responsible for rendering a grid of buttons.
+- **ButtonGrid.vue**: This component is responsible for rendering a grid of league buttons on the home screen.
 
-- **EredivisieCanvas.vue**: This component is used to display the Eredivisie logo.
+- **EredivisieCanvas.vue**: This component is used to display information about Eredivisie.
 
 - **EredivisieFixtures.vue**: This component is used to display the fixtures of the Eredivisie league.
 
@@ -46,7 +46,7 @@ The application is composed of several Vue.js components:
 
 - **HomeButton.vue**: This component displays a home button with a windmill image that redirects users to the home page.
 
-- **ThreeButtons.vue**: This component displays three buttons labeled "Table", "Fixtures", and "News". Clicking on these buttons will change the active component to EredivisieTable, EredivisieFixtures, and EredivisieNews respectively.
+- **ThreeButtons.vue**: This component displays three buttons labeled "Table", "Fixtures", and "News". Clicking on these buttons will change the active component to EredivisieTable, EredivisieFixtures, and EredivisieNews.
 
 - **LiveScores.vue**: This component extracts match data from an API (football-data.org). Cuurently not working due to a CORS error.
 
